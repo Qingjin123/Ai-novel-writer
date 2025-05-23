@@ -1,0 +1,21 @@
+{
+  "name": "ai-novel-write",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "frontend:dev": "pnpm --filter src-web dev",
+    "frontend:build": "pnpm --filter src-web build",
+    "tauri:dev": "pnpm frontend:dev & pnpm exec tauri dev",
+    "dev": "pnpm exec tauri dev",
+    "build": "pnpm exec tauri build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "packageManager": "pnpm@10.11.0",
+  "devDependencies": {
+    "@tauri-apps/cli": "^2.5.0"
+  }
+}
